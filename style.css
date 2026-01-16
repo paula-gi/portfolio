@@ -110,3 +110,22 @@ header {
 .menu.active {
   display: flex;
 }
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  margin: 30px 0 0 0;
+  list-style: none;
+}
+
+.tech-icons li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  color: #333;
+  transition: transform 0.3s ease;
+}
