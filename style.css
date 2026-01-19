@@ -228,4 +228,13 @@ header {
   font-size: 1.2rem;
 }
 
+.contact-container {
+  display: flex;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
