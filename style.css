@@ -220,3 +220,12 @@ header {
   background-color: #155bb5;
 }
 
+.no-projects-msg {
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 1.2rem;
+}
+
+
