@@ -107,9 +107,24 @@ header {
   min-width: 220px;
 }
 
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.menu li a:hover {
+  color: #ccc;
+}
+
+
 .menu.active {
   display: flex;
 }
+
 
 .tech-icons {
   display: flex;
