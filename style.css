@@ -162,6 +162,16 @@ header {
   transition: transform 0.3s ease;
 }
 
+.tech-icons li:hover {
+  transform: scale(1.1);
+}
+
+.tech-icons li span {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 8px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
