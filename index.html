@@ -2,148 +2,197 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paula García | Desarrolladora Web</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+  />
 </head>
+
 <body>
 
-  <!-- ENCABEZADO CON FOTO Y MENÚ -->
-  <header>
-    <!-- Menú hamburguesa -->
-    <nav class="navbar">
-      <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="menu" id="menu">
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="nav-logo">Paula García</span>
+
+      <ul class="menu">
         <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#about">Resumen</a></li>
+        <li><a href="#about">Sobre mí</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
-    </nav>
-
-    <!-- Contenido del header con texto e imagen -->
-    <div class="header-content">
-      <div class="header-text">
-        <h1>Paula García</h1>
-        <p>Desarrolladora Web junior</p>
-      </div>
-      <img src="tu-foto.jpg" alt="Foto de Paula García" class="header-avatar" />
     </div>
-  </header>
+  </nav>
 
-    <!-- SECCIONES DE CONTENIDO -->
-  <section id="about">
-    <h2>Sobre mí</h2>
-    <p>
-      ¡Hola! Soy Paula, desarrolladora web apasionada por crear experiencias web funcionales y creativas. Actualmente estoy aprendiendo nuevas tecnologías que iré incorporando a mis proyectos.
-    </p>
-  </section>
+  <!-- HEADER / HERO -->
+  <header>
+  <div class="hero-background"></div>
 
-  <section id="technologies">
-  <h2>Tecnologías</h2>
-  <ul class="tech-icons">
-    <li><i class="devicon-html5-plain colored"></i><span>HTML5</span></li>
-    <li><i class="devicon-css3-plain colored"></i><span>CSS3</span></li>
-    <li><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
-    <li><i class="devicon-github-original colored"></i><span>GitHub</span></li>         
-    <li><i class="devicon-vscode-plain colored"></i><span>VS Code</span></li>
-    <li><i class="devicon-wordpress-plain colored"></i><span>Wordpress</span></li> 
-    <li><i class="devicon-php-plain colored"></i><span>PHP</span></li>
-    <li><i class="devicon-mysql-plain colored"></i><span>MySQL</span></li>
-    <li><i class="devicon-react-plain colored"></i><span>React</span></li>
-         
-  </ul>
-</section>
-
-<section id="projects">
-  <h2>Mis proyectos</h2>
-  
-  <div class="projects-grid">
-
-    <!-- Tarjeta -->
-    <article class="project-card">
-      <img src="img/quien-es-el-pajaro.png" alt="Captura del proyecto 1" />
-      <div class="project-content">
-        <h3>¿Quién es el pájaro?</h3>
-        <p>Juego web interactivo donde el jugador compite contra la máquina para adivinar el ave secreta del oponente. 
-        Funcionalidades: elección aleatoria de aves, preguntas por turnos, descarte dinámico de opciones, interfaz responsive.</p>
-
-        <p class="project-tech">
-          <span><i class="devicon-html5-plain colored"></i> HTML5</span>
-          <span><i class="devicon-css3-plain colored"></i> CSS3</span>
-          <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
-        </p>
-        <a href="https://github.com/paula-gi/quien-es-el-pajaro" target="_blank" rel="noopener noreferrer" class="project-link">Ver proyecto</a>
-      </div>
-    </article>
-
-     <!-- Tarjeta -->
-    <article class="project-card">
-      <img src="img/polinectar.png" alt="Captura del proyecto 2" />
-      <div class="project-content">
-        <h3>PoliNectar</h3>
-        <p> Aplicación web interactiva que permite al usuario crear su propio huerto polinizador, aprendiendo qué plantas son más adecuadas según la estación, la región bioclimática y el tipo de polinizador. 
-        </p>
-
-        <p class="project-tech">
-          <span><i class="devicon-html5-plain colored"></i> HTML5</span>
-          <span><i class="devicon-css3-plain colored"></i> CSS3</span>
-          <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
-        </p>
-        <a href="https://github.com/paula-gi/polinectar" target="_blank" rel="noopener noreferrer" class="project-link">Ver proyecto</a>
-      </div>
-    </article>    
-
-    <!-- Si no hay proyectos aún, mostramos mensaje -->
-    <p class="no-projects-msg"></p>
-
+  <div class="header-content">
+    <div class="header-text">
+      <h1>Hola, soy Paula</h1>
+      <p>Desarrolladora Web Junior · Frontend</p>
+    </div>
+    <img src="tu-foto.jpg" alt="Foto de Paula García" class="header-avatar" />
   </div>
-</section>
+</header>
 
-<section id="contact">
-  <h2>Contacto</h2>
+  <main>
 
-  <div class="contact-container">
+    <!-- SOBRE MÍ -->
+    <section id="about">
+      <h2>Sobre mí</h2>
+      <p>
+        ¡Hola! Soy Paula, desarrolladora web apasionada por crear experiencias
+        web funcionales y creativas. Actualmente sigo aprendiendo nuevas
+        tecnologías que iré incorporando a mis proyectos.
+      </p>
+    </section>
 
-    <form class="contact-form" action="#" method="post" aria-label="Formulario de contacto">
-      <label for="name">Nombre</label>
-      <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+    <!-- TECNOLOGÍAS -->
+    <section id="technologies">
+      <h2>Tecnologías</h2>
 
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" placeholder="Tu email" required />
-
-      <label for="message">Mensaje</label>
-      <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-
-    <div class="contact-info">
-      <h3>O contáctame por</h3>
-      <ul>
-        <li>
-          <a href="mailto:paulagariglesias@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Enviar correo electrónico">
-            📧 paulagariglesias@gmail.com
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/paulagarciaiglesias" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil de LinkedIn">
-            🔗 LinkedIn
-          </a>
-        </li>
+      <ul class="tech-icons">
+        <li><i class="devicon-html5-plain colored"></i><span>HTML5</span></li>
+        <li><i class="devicon-css3-plain colored"></i><span>CSS3</span></li>
+        <li><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
+        <li><i class="devicon-react-plain colored"></i><span>React</span></li>
+        <li><i class="devicon-php-plain colored"></i><span>PHP</span></li>
+        <li><i class="devicon-mysql-plain colored"></i><span>MySQL</span></li>
+        <li><i class="devicon-github-original colored"></i><span>GitHub</span></li>
       </ul>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <!-- PROYECTOS -->
+    <section id="projects">
+      <h2>Mis proyectos</h2>
 
-<script src="script.js"></script>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <img src="img/quien-es-el-pajaro.png" alt="Proyecto ¿Quién es el pájaro?" />
+          <div class="project-content">
+            <h3>¿Quién es el pájaro?</h3>
+            <p>
+              Juego web interactivo donde el jugador compite contra la máquina
+              para adivinar el ave secreta.
+            </p>
+
+            <p class="project-tech">
+              <span><i class="devicon-html5-plain colored"></i> HTML5</span>
+              <span><i class="devicon-css3-plain colored"></i> CSS3</span>
+              <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+            </p>
+
+            <a
+              href="https://github.com/paula-gi/quien-es-el-pajaro"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              Ver proyecto
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="img/polinectar.png" alt="Proyecto PoliNectar" />
+          <div class="project-content">
+            <h3>PoliNectar</h3>
+            <p>
+              Aplicación web interactiva para crear huertos polinizadores según
+              región y tipo de polinizador.
+            </p>
+
+            <p class="project-tech">
+              <span><i class="devicon-html5-plain colored"></i> HTML5</span>
+              <span><i class="devicon-css3-plain colored"></i> CSS3</span>
+              <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+            </p>
+
+            <a
+              href="https://github.com/paula-gi/polinectar"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              Ver proyecto
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="" alt="Proyecto PoliNectar" />
+          <div class="project-content">
+            <h3>Calculadora</h3>
+            <p>
+              Aplicación web 
+            </p>
+
+            <p class="project-tech">
+              <span><i class="devicon-html5-plain colored"></i> HTML5</span>
+              <span><i class="devicon-css3-plain colored"></i> CSS3</span>
+              <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+            </p>
+
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              Ver proyecto
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact">
+      <h2>Contacto</h2>
+
+      <div class="contact-container">
+
+        <form class="contact-form">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" required />
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" rows="5" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>O contáctame por</h3>
+          <ul>
+            <li>
+              <a href="mailto:paulagariglesias@gmail.com">📧 Email</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/paulagarciaiglesias" target="_blank">
+                🔗 LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
 </body>
 </html>
+
 
 
