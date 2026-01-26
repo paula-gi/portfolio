@@ -250,53 +250,45 @@ header {
 
 /*Contacto*/
 .contact-container {
-  display: flex;
-  gap: 3rem;
-  max-width: 900px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+  text-align: center; 
+  padding: 2rem 1rem;
 }
 
-.contact-form,
-.contact-info {
-  flex: 1 1 300px;
-  padding: 2rem;
-  border-radius: var(--radius);
+#contact h2 {
+  margin-bottom: 0.5rem; 
 }
 
-.contact-form {
-  background-color: var(--color-card);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.75rem;
-  border-radius: 6px;
-  border: 1px solid var(--color-border);
-  font-family: inherit;
-}
-
-.contact-form button {
-  background-color: var(--color-primary);
-  color: white;
-  border: none;
-  padding: 0.75rem;
-  border-radius: 8px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.contact-info {
-  background-color: var(--color-primary);
-  color: white;
+.contact-intro {
+  font-size: 1.1rem;
+  margin-top: 0;         
+  margin-bottom: 1rem;   
+  color: #333;
   text-align: center;
 }
 
-.contact-info a {
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.contact-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #6886a7;
   color: white;
   text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
 }
+
+.contact-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+
 
 /*Responsive*/
 @media (max-width: 768px) {
