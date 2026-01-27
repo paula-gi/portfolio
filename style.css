@@ -3,8 +3,8 @@
   --color-bg: #f6f7f4;
   --color-text: #2f3e34;
   --color-muted: #6b7280;
-  --color-primary: #6b8f71;
-  --color-primary-dark: #587a5f;
+  --color-primary: #7d94c5;
+  --color-primary-dark: #315c82;
   --color-card: #ffffff;
   --color-border: #e5e7eb;
 
@@ -284,7 +284,7 @@ header {
 }
 
 .contact-btn:hover {
-  background-color: #0056b3;
+  background-color: #1f4d7e;
   transform: translateY(-2px);
 }
 
