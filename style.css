@@ -176,8 +176,9 @@ header {
 }
 
 .tech-icons li .tech-icon {
-  width: 3rem;
+  width: auto;
   height: 3rem;
+  object-fit: contain;
 }
 
 .tech-icons li span {
