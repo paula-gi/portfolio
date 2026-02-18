@@ -397,5 +397,15 @@ header {
   .menu.active {
     display: flex;
   }
+
+  .project-buttons {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .project-buttons .project-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
 }
 
