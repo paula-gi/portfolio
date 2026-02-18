@@ -327,6 +327,13 @@ header {
   transform: translateY(-2px);
 }
 
+.footer {
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
 
 /*Responsive*/
 @media (max-width: 768px) {
