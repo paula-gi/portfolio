@@ -362,3 +362,40 @@ header {
   }
 }
 
+/* Hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile navbar */
+@media (max-width: 768px) {
+
+  .nav-container {
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
+
