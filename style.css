@@ -335,6 +335,31 @@ header {
   font-size: 0.9rem;
 }
 
+.projects-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.projects-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.4s ease;
+}
+
+.project-card {
+  min-width: calc(33.333% - 1.33rem);
+}
+
+
+
 /*Responsive*/
 @media (max-width: 768px) {
   .nav-container {
