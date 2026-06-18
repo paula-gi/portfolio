@@ -11,7 +11,7 @@
   --radius: 12px;
 }
 
-/*Base*/
+/*Base styles*/
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--color-bg);
@@ -31,7 +31,7 @@ section h2 {
   margin-bottom: 1rem;
 }
 
-/*Navbar horizontal*/
+/*Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -56,6 +56,7 @@ section h2 {
   font-size: 1.1rem;
 }
 
+/* Menu */
 .menu {
   list-style: none;
   display: flex;
@@ -96,7 +97,11 @@ section h2 {
   outline-offset: 6px;
 }
 
-/*header*/
+.hamburger {
+  display: none;
+}
+
+/* Hero */
 header {
   position: relative;
   min-height: 90vh;
@@ -106,7 +111,6 @@ header {
   overflow: hidden;
 }
 
-/* Fondo decorativo */
 .hero-background {
   position: absolute;
   top: 0;
@@ -133,7 +137,6 @@ header {
   flex-wrap: wrap;
 }
 
-/* Texto del hero */
 .header-text h1 {
   font-size: 3.2rem;
   margin-bottom: 1rem;
@@ -146,7 +149,6 @@ header {
   max-width: 600px;
 }
 
-/* Foto de perfil */
 .header-avatar {
   width: 180px;
   height: 180px;
@@ -156,7 +158,7 @@ header {
   box-shadow: 0 6px 25px rgba(0,0,0,0.5);
 }
 
-/*Tecnologías*/
+/*Technologies section*/
 .tech-icons {
   display: flex;
   justify-content: center;
@@ -216,7 +218,7 @@ header {
   background: var(--color-primary);
 }
 
-/*proyectos*/
+/*Projects section*/
 #projects {
   background-color: #eef0eb;
 }
@@ -317,55 +319,6 @@ header {
   align-self: auto;    
 }
 
-
-/*Contacto*/
-.contact-container {
-  text-align: center; 
-  padding: 2rem 1rem;
-}
-
-#contact h2 {
-  margin-bottom: 0.5rem; 
-}
-
-.contact-intro {
-  font-size: 1.1rem;
-  margin-top: 0;         
-  margin-bottom: 1rem;   
-  color: #333;
-  text-align: center;
-}
-
-.contact-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.contact-btn {
-  padding: 0.8rem 1.5rem;
-  background-color: #6886a7;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.contact-btn:hover {
-  background-color: #1f4d7e;
-  transform: translateY(-2px);
-}
-
-.footer {
-  background-color: var(--color-primary);
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-}
-
 .projects-wrapper {
   position: relative;
   display: flex;
@@ -412,19 +365,98 @@ header {
 }
 
 .arrow.left {
-  left: -40px;
+  left: -20px;
 }
 
 .arrow.right {
-  right: -40px;
+  right: -20px;
 }
 
-/*Responsive*/
+
+/*Contact section*/
+.contact-container {
+  text-align: center; 
+  padding: 2rem 1rem;
+}
+
+#contact h2 {
+  margin-bottom: 0.5rem; 
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  margin-top: 0;         
+  margin-bottom: 1rem;   
+  color: #333;
+  text-align: center;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.contact-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #6886a7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: #1f4d7e;
+  transform: translateY(-2px);
+}
+
+/* Footer section */
+.footer {
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+
+/* Responsive */
 @media (max-width: 768px) {
+
+  /* Navbar */
+
   .nav-container {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
   }
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  /* Hero section*/
 
   .header-content {
     text-align: center;
@@ -444,43 +476,45 @@ header {
   .header-text p {
     font-size: 1.2rem;
   }
-}
 
-/* Hamburguesa */
-.hamburger {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+  /* Technologies section */
 
-/* Mobile navbar */
-@media (max-width: 768px) {
-
-  .nav-container {
-    flex-direction: row;
+  .tech-icons {
+    gap: 12px;
   }
 
-  .hamburger {
-    display: block;
+  .tech-icons li {
+    width: 90px;
   }
 
-  .menu {
+  .tech-icons li .tech-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Project carousel */
+
+  .project-card {
+    min-width: 100%;
+  }
+
+  .projects-container {
+    max-width: 100%;
+  }
+
+  .projects-wrapper {
+    padding: 0;
+  }
+
+  .arrow {
     display: none;
-    position: absolute;
-    top: 70px;
-    right: 10%;
-    background: white;
-    flex-direction: column;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   }
 
-  .menu.active {
-    display: flex;
+  .project-content p:not(.project-tech) {
+    min-height: auto;
   }
+
+  /* Project buttons */
 
   .project-buttons {
     flex-wrap: wrap;
@@ -491,6 +525,20 @@ header {
     padding: 0.4rem 0.8rem;
     font-size: 0.85rem;
   }
+
+  /* Contact section */
+
+  .contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-btn {
+    width: 220px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
 }
-
-
