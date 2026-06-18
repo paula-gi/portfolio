@@ -161,7 +161,7 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 18px;
   list-style: none;
   padding: 0;
   margin-top: 2rem;
@@ -171,23 +171,49 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 3rem;
+  justify-content: center;
+
+  width: 110px;
+
   transition: transform 0.3s ease;
 }
 
 .tech-icons li .tech-icon {
-  width: auto;
-  height: 3rem;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 
 .tech-icons li span {
-  font-size: 0.8rem; 
-  margin-top: 6px;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .tech-icons li:hover {
   transform: scale(1.1);
+}
+
+#technologies h2 {
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+#technologies h3 {
+  color: var(--color-primary-dark);
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+#technologies h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin-top: 5px;
+  background: var(--color-primary);
 }
 
 /*proyectos*/
@@ -237,6 +263,11 @@ header {
 
 .project-content p {
   color: var(--color-muted);
+}
+
+.project-content p:not(.project-tech) {
+  color: var(--color-muted);
+  min-height: 200px;
 }
 
 .project-link {
@@ -371,6 +402,11 @@ header {
   transition: transform 0.2s;
 }
 
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
 .arrow:hover {
   transform: translateY(-50%) scale(1.2);
 }
@@ -456,4 +492,5 @@ header {
     font-size: 0.85rem;
   }
 }
+
 
